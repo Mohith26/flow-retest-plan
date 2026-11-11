@@ -116,7 +116,7 @@ function cards() {
   const planH = P.cover.cost || 0;
   return `<div class="cards">
     <div class="card"><div class="k"><i data-lucide="git-fork" class="ic-s"></i>Suspect by traceability</div><div class="v num">${P.graph.requirements} <small>reqs · ${P.graph.tests} tests</small></div><div class="d">${P.graph.hours} test-hours if all re-run</div></div>
-    <div class="card"><div class="k"><i data-lucide="shield-check" class="ic-s" style="color:var(--green)"></i>Proven by worst-case analysis</div><div class="v num">${n('proven') + n('unchanged')}</div><div class="d">Existing evidence still holds</div></div>
+    <div class="card"><div class="k"><i data-lucide="shield-check" class="ic-s" style="color:var(--green)"></i>Proven by analysis</div><div class="v num">${n('proven') + n('unchanged')}</div><div class="d">Existing evidence still holds</div></div>
     <div class="card"><div class="k"><i data-lucide="triangle-alert" class="ic-s" style="color:var(--amber)"></i>At risk or failing</div><div class="v num">${n('at-risk') + n('fails')}</div><div class="d">${n('fails')} fail even in the best case</div></div>
     <div class="card"><div class="k"><i data-lucide="rotate-ccw" class="ic-s" style="color:var(--violet)"></i>Re-verify (no numeric model)</div><div class="v num">${n('review')}</div><div class="d">On changed systems</div></div>
     <div class="card hl"><div class="k"><i data-lucide="list-restart" class="ic-s" style="color:var(--primary)"></i>Minimum retest plan</div><div class="v num">${P.cover.ids ? P.cover.ids.length : 0} <small>tests · ${planH} h</small></div><div class="d"><span class="save">${Math.round(P.saving * 100)}% fewer test-hours</span></div></div>
