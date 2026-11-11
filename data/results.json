@@ -1,0 +1,183 @@
+{
+ "generated_at": "2026-11-11T13:34:35.673Z",
+ "program": "Kestrel-6U",
+ "branches": {
+  "payload-camera-v2": {
+   "title": "Upgrade to camera v2 (higher-res sensor)",
+   "changed": [
+    "m_cam",
+    "p_cam",
+    "mb_img"
+   ],
+   "counts": {
+    "proven": 6,
+    "at-risk": 3,
+    "unaffected": 10,
+    "review": 3
+   },
+   "graph": {
+    "requirements": 12,
+    "tests": 13,
+    "hours": 308
+   },
+   "plan": {
+    "tests": [
+     "TCS-10",
+     "TCS-13",
+     "TCS-14",
+     "TCS-16",
+     "TCS-8"
+    ],
+    "hours": 68,
+    "optimal": true,
+    "nodes": 7
+   },
+   "saving": 0.7792207792207793,
+   "provenByAnalysis": [
+    "REQ-1",
+    "REQ-2",
+    "REQ-4",
+    "REQ-5",
+    "REQ-6",
+    "REQ-9"
+   ],
+   "atRisk": [
+    {
+     "id": "REQ-3",
+     "after": [
+      141.59096622607245,
+      173.9664300261121
+     ],
+     "pFail": 0,
+     "ci": [
+      0,
+      0.00019204311235897808
+     ]
+    },
+    {
+     "id": "REQ-8",
+     "after": [
+      26.47608,
+      37.46568
+     ],
+     "pFail": 0.0026,
+     "ci": [
+      0.0019833857544947495,
+      0.003407658733679962
+     ]
+    },
+    {
+     "id": "REQ-10",
+     "after": [
+      0.843967741935484,
+      1.540130730050934
+     ],
+     "pFail": 0.0034,
+     "ci": [
+      0.00268307449085832,
+      0.004307662728336617
+     ]
+    }
+   ],
+   "fails": [],
+   "review": [
+    "REQ-14",
+    "REQ-15",
+    "REQ-16"
+   ]
+  },
+  "battery-cell-swap": {
+   "title": "Swap to 3.5 Ah cells (supply change)",
+   "changed": [
+    "cap_ah",
+    "m_cell",
+    "r_int"
+   ],
+   "counts": {
+    "proven": 7,
+    "unaffected": 12,
+    "unchanged": 1,
+    "review": 2
+   },
+   "graph": {
+    "requirements": 10,
+    "tests": 9,
+    "hours": 266
+   },
+   "plan": {
+    "tests": [
+     "TCS-5",
+     "TCS-6"
+    ],
+    "hours": 22,
+    "optimal": true,
+    "nodes": 1
+   },
+   "saving": 0.9172932330827068,
+   "provenByAnalysis": [
+    "REQ-1",
+    "REQ-2",
+    "REQ-3",
+    "REQ-5",
+    "REQ-6",
+    "REQ-9",
+    "REQ-11"
+   ],
+   "atRisk": [],
+   "fails": [],
+   "review": [
+    "REQ-12",
+    "REQ-13"
+   ]
+  },
+  "thermal-strap-redesign": {
+   "title": "Copper strap to graphite, camera to radiator",
+   "changed": [
+    "r_cam",
+    "m_therm"
+   ],
+   "counts": {
+    "proven": 5,
+    "unaffected": 14,
+    "unchanged": 2,
+    "review": 1
+   },
+   "graph": {
+    "requirements": 8,
+    "tests": 7,
+    "hours": 201
+   },
+   "plan": {
+    "tests": [
+     "TCS-15"
+    ],
+    "hours": 3,
+    "optimal": true,
+    "nodes": 1
+   },
+   "saving": 0.9850746268656716,
+   "provenByAnalysis": [
+    "REQ-1",
+    "REQ-2",
+    "REQ-3",
+    "REQ-8",
+    "REQ-9"
+   ],
+   "atRisk": [],
+   "fails": [],
+   "review": [
+    "REQ-17"
+   ]
+  }
+ },
+ "headline": {
+  "branch": "payload-camera-v2",
+  "graphRequirements": 12,
+  "graphTests": 13,
+  "graphHours": 308,
+  "proven": 6,
+  "planTests": 5,
+  "planHours": 68,
+  "saving": 0.7792207792207793
+ }
+}

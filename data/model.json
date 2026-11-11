@@ -1,0 +1,1201 @@
+{
+ "program": "Kestrel-6U",
+ "values": [
+  {
+   "id": "m_struct",
+   "name": "Structure mass (6U frame)",
+   "unit": "kg",
+   "nominal": 1.2,
+   "tol": 3,
+   "tolKind": "pct",
+   "system": "structure",
+   "source": "COTS 6U structure datasheets 1.0-1.3 kg"
+  },
+  {
+   "id": "m_harness",
+   "name": "Harness mass",
+   "unit": "kg",
+   "nominal": 0.3,
+   "tol": 15,
+   "tolKind": "pct",
+   "system": "structure",
+   "source": ""
+  },
+  {
+   "id": "m_fast",
+   "name": "Fasteners and brackets mass",
+   "unit": "kg",
+   "nominal": 0.15,
+   "tol": 15,
+   "tolKind": "pct",
+   "system": "structure",
+   "source": ""
+  },
+  {
+   "id": "m_panels",
+   "name": "Deployable solar panels mass (4)",
+   "unit": "kg",
+   "nominal": 1.08,
+   "tol": 4,
+   "tolKind": "pct",
+   "system": "solar",
+   "source": ""
+  },
+  {
+   "id": "area_cells",
+   "name": "Illuminated cell area",
+   "unit": "m²",
+   "nominal": 0.12,
+   "tol": 2,
+   "tolKind": "pct",
+   "system": "solar",
+   "source": ""
+  },
+  {
+   "id": "eff_cells",
+   "name": "Solar cell efficiency (BOL)",
+   "unit": "",
+   "nominal": 0.295,
+   "tol": 2,
+   "tolKind": "pct",
+   "system": "solar",
+   "source": "29.5% triple-junction GaAs"
+  },
+  {
+   "id": "cos_avg",
+   "name": "Orbit-average incidence factor",
+   "unit": "",
+   "nominal": 0.62,
+   "tol": 5,
+   "tolKind": "pct",
+   "system": "adcs",
+   "source": ""
+  },
+  {
+   "id": "sun_frac",
+   "name": "Sunlit fraction of orbit",
+   "unit": "",
+   "nominal": 0.625,
+   "tol": 1,
+   "tolKind": "pct",
+   "system": "mission",
+   "source": "500 km SSO: 35.5 of 94.6 min in eclipse"
+  },
+  {
+   "id": "n_cells",
+   "name": "Battery cells",
+   "unit": "count",
+   "nominal": 8,
+   "tol": 0,
+   "tolKind": "abs",
+   "system": "battery",
+   "source": ""
+  },
+  {
+   "id": "m_cell",
+   "name": "Cell mass",
+   "unit": "kg",
+   "nominal": 0.047,
+   "tol": 2,
+   "tolKind": "pct",
+   "system": "battery",
+   "source": "18650 Li-ion"
+  },
+  {
+   "id": "cap_ah",
+   "name": "Cell capacity (BOL)",
+   "unit": "Ah",
+   "nominal": 3.2,
+   "tol": 3,
+   "tolKind": "pct",
+   "system": "battery",
+   "source": "18650 Li-ion"
+  },
+  {
+   "id": "v_cell",
+   "name": "Cell nominal voltage",
+   "unit": "V",
+   "nominal": 3.6,
+   "tol": 0,
+   "tolKind": "abs",
+   "system": "battery",
+   "source": ""
+  },
+  {
+   "id": "r_int",
+   "name": "Cell internal resistance",
+   "unit": "Ω",
+   "nominal": 0.045,
+   "tol": 10,
+   "tolKind": "pct",
+   "system": "battery",
+   "source": ""
+  },
+  {
+   "id": "eta_batt",
+   "name": "Battery discharge efficiency",
+   "unit": "",
+   "nominal": 0.95,
+   "tol": 1,
+   "tolKind": "pct",
+   "system": "battery",
+   "source": ""
+  },
+  {
+   "id": "m_bms",
+   "name": "Battery board and BMS mass",
+   "unit": "kg",
+   "nominal": 0.12,
+   "tol": 5,
+   "tolKind": "pct",
+   "system": "battery",
+   "source": ""
+  },
+  {
+   "id": "m_eps",
+   "name": "EPS board mass",
+   "unit": "kg",
+   "nominal": 0.09,
+   "tol": 5,
+   "tolKind": "pct",
+   "system": "eps",
+   "source": ""
+  },
+  {
+   "id": "m_obc",
+   "name": "On-board computer mass",
+   "unit": "kg",
+   "nominal": 0.07,
+   "tol": 5,
+   "tolKind": "pct",
+   "system": "cdh",
+   "source": ""
+  },
+  {
+   "id": "m_adcs",
+   "name": "ADCS unit mass (wheels + star tracker)",
+   "unit": "kg",
+   "nominal": 1.05,
+   "tol": 3,
+   "tolKind": "pct",
+   "system": "adcs",
+   "source": ""
+  },
+  {
+   "id": "k_inertia",
+   "name": "Inertia per unit mass (slew axis)",
+   "unit": "m²",
+   "nominal": 0.0105,
+   "tol": 10,
+   "tolKind": "pct",
+   "system": "adcs",
+   "source": ""
+  },
+  {
+   "id": "torque",
+   "name": "Reaction wheel torque",
+   "unit": "N·m",
+   "nominal": 0.002,
+   "tol": 5,
+   "tolKind": "pct",
+   "system": "adcs",
+   "source": ""
+  },
+  {
+   "id": "m_uhf",
+   "name": "UHF radio and antenna mass",
+   "unit": "kg",
+   "nominal": 0.14,
+   "tol": 5,
+   "tolKind": "pct",
+   "system": "uhf",
+   "source": ""
+  },
+  {
+   "id": "m_sband",
+   "name": "S-band radio and patch mass",
+   "unit": "kg",
+   "nominal": 0.21,
+   "tol": 5,
+   "tolKind": "pct",
+   "system": "sband",
+   "source": ""
+  },
+  {
+   "id": "p_sband",
+   "name": "S-band transmit power draw",
+   "unit": "W",
+   "nominal": 9.5,
+   "tol": 5,
+   "tolKind": "pct",
+   "system": "sband",
+   "source": ""
+  },
+  {
+   "id": "duty_tx",
+   "name": "S-band transmit duty cycle",
+   "unit": "",
+   "nominal": 0.06,
+   "tol": 0,
+   "tolKind": "abs",
+   "system": "mission",
+   "source": ""
+  },
+  {
+   "id": "passes",
+   "name": "Ground passes per day",
+   "unit": "count",
+   "nominal": 4,
+   "tol": 0,
+   "tolKind": "abs",
+   "system": "mission",
+   "source": ""
+  },
+  {
+   "id": "pass_min",
+   "name": "Usable minutes per pass",
+   "unit": "min",
+   "nominal": 8.5,
+   "tol": 10,
+   "tolKind": "pct",
+   "system": "mission",
+   "source": ""
+  },
+  {
+   "id": "rate_mbps",
+   "name": "S-band downlink rate",
+   "unit": "Mbit/s",
+   "nominal": 12,
+   "tol": 5,
+   "tolKind": "pct",
+   "system": "sband",
+   "source": ""
+  },
+  {
+   "id": "link_eff",
+   "name": "Link efficiency (protocol, retries)",
+   "unit": "",
+   "nominal": 0.7,
+   "tol": 10,
+   "tolKind": "pct",
+   "system": "sband",
+   "source": ""
+  },
+  {
+   "id": "m_cam",
+   "name": "Payload camera mass",
+   "unit": "kg",
+   "nominal": 1.45,
+   "tol": 4,
+   "tolKind": "pct",
+   "system": "camera",
+   "source": ""
+  },
+  {
+   "id": "p_cam",
+   "name": "Camera power while imaging",
+   "unit": "W",
+   "nominal": 7.8,
+   "tol": 8,
+   "tolKind": "pct",
+   "system": "camera",
+   "source": ""
+  },
+  {
+   "id": "duty_cam",
+   "name": "Imaging duty cycle",
+   "unit": "",
+   "nominal": 0.18,
+   "tol": 0,
+   "tolKind": "abs",
+   "system": "mission",
+   "source": ""
+  },
+  {
+   "id": "images",
+   "name": "Images per day",
+   "unit": "count",
+   "nominal": 120,
+   "tol": 0,
+   "tolKind": "abs",
+   "system": "mission",
+   "source": ""
+  },
+  {
+   "id": "mb_img",
+   "name": "Compressed image size",
+   "unit": "MB",
+   "nominal": 12,
+   "tol": 5,
+   "tolKind": "pct",
+   "system": "camera",
+   "source": ""
+  },
+  {
+   "id": "r_cam",
+   "name": "Camera detector to radiator thermal resistance",
+   "unit": "K/W",
+   "nominal": 1.4,
+   "tol": 10,
+   "tolKind": "pct",
+   "system": "thermal",
+   "source": ""
+  },
+  {
+   "id": "m_therm",
+   "name": "Thermal hardware mass (straps, MLI)",
+   "unit": "kg",
+   "nominal": 0.18,
+   "tol": 10,
+   "tolKind": "pct",
+   "system": "thermal",
+   "source": ""
+  },
+  {
+   "id": "r_batt",
+   "name": "Battery to sink thermal resistance",
+   "unit": "K/W",
+   "nominal": 7,
+   "tol": 10,
+   "tolKind": "pct",
+   "system": "thermal",
+   "source": ""
+  },
+  {
+   "id": "p_heater",
+   "name": "Battery heater average power",
+   "unit": "W",
+   "nominal": 3,
+   "tol": 15,
+   "tolKind": "pct",
+   "system": "thermal",
+   "source": ""
+  },
+  {
+   "id": "t_hot",
+   "name": "Hot-case sink temperature",
+   "unit": "°C",
+   "nominal": 18,
+   "tol": 3,
+   "tolKind": "abs",
+   "system": "mission",
+   "source": ""
+  },
+  {
+   "id": "t_cold",
+   "name": "Cold-case sink temperature",
+   "unit": "°C",
+   "nominal": -14,
+   "tol": 3,
+   "tolKind": "abs",
+   "system": "mission",
+   "source": ""
+  },
+  {
+   "id": "p_bus",
+   "name": "Bus average load (OBC, EPS, UHF RX)",
+   "unit": "W",
+   "nominal": 3.9,
+   "tol": 8,
+   "tolKind": "pct",
+   "system": "eps",
+   "source": ""
+  },
+  {
+   "id": "p_adcs",
+   "name": "ADCS average power",
+   "unit": "W",
+   "nominal": 2.4,
+   "tol": 10,
+   "tolKind": "pct",
+   "system": "adcs",
+   "source": ""
+  },
+  {
+   "id": "f_ref",
+   "name": "Reference first mode at 6.0 kg (FEM)",
+   "unit": "Hz",
+   "nominal": 165,
+   "tol": 8,
+   "tolKind": "pct",
+   "system": "structure",
+   "source": ""
+  },
+  {
+   "id": "t_peak",
+   "name": "Peak event duration (imaging + downlink in eclipse)",
+   "unit": "h",
+   "nominal": 0.25,
+   "tol": 0,
+   "tolKind": "abs",
+   "system": "mission",
+   "source": ""
+  },
+  {
+   "id": "t_ecl",
+   "name": "Eclipse duration",
+   "unit": "h",
+   "nominal": 0.592,
+   "tol": 1,
+   "tolKind": "pct",
+   "system": "mission",
+   "source": ""
+  }
+ ],
+ "derived": [
+  {
+   "id": "m_batt",
+   "name": "Battery pack mass",
+   "unit": "kg",
+   "formula": "n_cells * m_cell + m_bms",
+   "system": "battery"
+  },
+  {
+   "id": "m_total",
+   "name": "Total wet mass",
+   "unit": "kg",
+   "formula": "sum(m_struct, m_harness, m_fast, m_panels, m_batt, m_eps, m_obc, m_adcs, m_uhf, m_sband, m_cam, m_therm)",
+   "system": "kestrel"
+  },
+  {
+   "id": "f1",
+   "name": "First natural frequency",
+   "unit": "Hz",
+   "formula": "f_ref * sqrt(6.0 / m_total)",
+   "system": "structure"
+  },
+  {
+   "id": "p_gen",
+   "name": "Orbit-average generated power",
+   "unit": "W",
+   "formula": "area_cells * eff_cells * 1361 * cos_avg * sun_frac",
+   "system": "solar"
+  },
+  {
+   "id": "p_cons",
+   "name": "Orbit-average consumed power",
+   "unit": "W",
+   "formula": "p_bus + p_adcs + p_cam * duty_cam + p_sband * duty_tx + p_heater",
+   "system": "eps"
+  },
+  {
+   "id": "pwr_ratio",
+   "name": "Power generation / consumption",
+   "unit": "",
+   "formula": "p_gen / p_cons",
+   "system": "eps"
+  },
+  {
+   "id": "e_batt",
+   "name": "Battery energy (BOL)",
+   "unit": "Wh",
+   "formula": "n_cells * cap_ah * v_cell",
+   "system": "battery"
+  },
+  {
+   "id": "p_ecl",
+   "name": "Eclipse load",
+   "unit": "W",
+   "formula": "p_bus + p_adcs + p_heater",
+   "system": "eps"
+  },
+  {
+   "id": "p_peak",
+   "name": "Peak discharge load",
+   "unit": "W",
+   "formula": "p_ecl + p_cam + p_sband",
+   "system": "eps"
+  },
+  {
+   "id": "dod_peak",
+   "name": "Depth of discharge, worst eclipse with peak event",
+   "unit": "",
+   "formula": "(p_ecl * t_ecl + (p_cam + p_sband) * t_peak) / (e_batt * eta_batt)",
+   "system": "battery"
+  },
+  {
+   "id": "i_cell",
+   "name": "Peak cell current",
+   "unit": "A",
+   "formula": "p_peak / (n_cells * v_cell)",
+   "system": "battery"
+  },
+  {
+   "id": "p_diss",
+   "name": "Battery heat dissipation at peak",
+   "unit": "W",
+   "formula": "n_cells * r_int * sq(i_cell) + p_peak * (1 - eta_batt)",
+   "system": "battery"
+  },
+  {
+   "id": "t_batt_hot",
+   "name": "Battery temperature, hot case",
+   "unit": "°C",
+   "formula": "t_hot + r_batt * p_diss",
+   "system": "thermal"
+  },
+  {
+   "id": "t_batt_cold",
+   "name": "Battery temperature, cold case",
+   "unit": "°C",
+   "formula": "t_cold + r_batt * (p_heater + p_ecl * (1 - eta_batt))",
+   "system": "thermal"
+  },
+  {
+   "id": "t_cam",
+   "name": "Camera detector temperature, hot case",
+   "unit": "°C",
+   "formula": "t_hot + r_cam * p_cam",
+   "system": "thermal"
+  },
+  {
+   "id": "inertia",
+   "name": "Slew-axis inertia",
+   "unit": "kg·m²",
+   "formula": "k_inertia * m_total",
+   "system": "adcs"
+  },
+  {
+   "id": "t_slew",
+   "name": "30° slew time (bang-bang)",
+   "unit": "s",
+   "formula": "2 * sqrt(0.5236 * inertia / torque)",
+   "system": "adcs"
+  },
+  {
+   "id": "dl_mb",
+   "name": "Daily downlink capacity",
+   "unit": "MB",
+   "formula": "passes * pass_min * 60 * rate_mbps * link_eff / 8",
+   "system": "sband"
+  },
+  {
+   "id": "img_mb",
+   "name": "Daily image data",
+   "unit": "MB",
+   "formula": "images * mb_img",
+   "system": "camera"
+  },
+  {
+   "id": "dl_ratio",
+   "name": "Downlink capacity / image data",
+   "unit": "",
+   "formula": "dl_mb / img_mb",
+   "system": "sband"
+  }
+ ],
+ "requirements": [
+  {
+   "id": "REQ-1",
+   "name": "Spacecraft mass ≤ 12.0 kg",
+   "statement": "The spacecraft shall have a total mass of no more than {12.0 kg} at launch.",
+   "quantity": "m_total",
+   "op": "<=",
+   "limit": 12,
+   "systems": [
+    "kestrel"
+   ],
+   "kind": "numeric",
+   "source": "CDS Rev 14.1, 6U",
+   "stage": "Released"
+  },
+  {
+   "id": "REQ-2",
+   "name": "Mass within program allocation",
+   "statement": "The spacecraft total mass shall not exceed the program allocation of {6.9 kg}, including uncertainty.",
+   "quantity": "m_total",
+   "op": "<=",
+   "limit": 6.9,
+   "systems": [
+    "kestrel"
+   ],
+   "kind": "numeric",
+   "source": "",
+   "stage": "Released"
+  },
+  {
+   "id": "REQ-3",
+   "name": "First natural frequency ≥ 142 Hz",
+   "statement": "The spacecraft first natural frequency in the stowed configuration shall be at least {142 Hz}.",
+   "quantity": "f1",
+   "op": ">=",
+   "limit": 142,
+   "systems": [
+    "structure"
+   ],
+   "kind": "numeric",
+   "source": "",
+   "stage": "Released"
+  },
+  {
+   "id": "REQ-4",
+   "name": "Orbit-average power margin ≥ 25%",
+   "statement": "Orbit-average generated power shall exceed orbit-average consumption by at least {25%}.",
+   "quantity": "pwr_ratio",
+   "op": ">=",
+   "limit": 1.25,
+   "systems": [
+    "eps",
+    "solar"
+   ],
+   "kind": "numeric",
+   "source": "",
+   "stage": "Released"
+  },
+  {
+   "id": "REQ-5",
+   "name": "Depth of discharge ≤ 15%",
+   "statement": "Battery depth of discharge during a worst-case eclipse with a peak event shall not exceed {15%}.",
+   "quantity": "dod_peak",
+   "op": "<=",
+   "limit": 0.15,
+   "systems": [
+    "battery"
+   ],
+   "kind": "numeric",
+   "source": "",
+   "stage": "Released"
+  },
+  {
+   "id": "REQ-6",
+   "name": "Battery hot case ≤ 40 °C",
+   "statement": "Battery cell temperature shall not exceed {40 °C} in the hot operational case.",
+   "quantity": "t_batt_hot",
+   "op": "<=",
+   "limit": 40,
+   "systems": [
+    "battery",
+    "thermal"
+   ],
+   "kind": "numeric",
+   "source": "",
+   "stage": "Released"
+  },
+  {
+   "id": "REQ-7",
+   "name": "Battery cold case ≥ 0 °C",
+   "statement": "Battery cell temperature shall remain at or above {0 °C} in the cold operational case.",
+   "quantity": "t_batt_cold",
+   "op": ">=",
+   "limit": 0,
+   "systems": [
+    "battery",
+    "thermal"
+   ],
+   "kind": "numeric",
+   "source": "",
+   "stage": "Released"
+  },
+  {
+   "id": "REQ-8",
+   "name": "Camera detector ≤ 35 °C",
+   "statement": "The camera detector temperature shall not exceed {35 °C} while imaging in the hot case.",
+   "quantity": "t_cam",
+   "op": "<=",
+   "limit": 35,
+   "systems": [
+    "camera",
+    "thermal"
+   ],
+   "kind": "numeric",
+   "source": "",
+   "stage": "Released"
+  },
+  {
+   "id": "REQ-9",
+   "name": "30° slew ≤ 12 s",
+   "statement": "The spacecraft shall complete a {30°} slew in no more than {12 s}.",
+   "quantity": "t_slew",
+   "op": "<=",
+   "limit": 12,
+   "systems": [
+    "adcs"
+   ],
+   "kind": "numeric",
+   "source": "",
+   "stage": "Released"
+  },
+  {
+   "id": "REQ-10",
+   "name": "Downlink all imagery daily",
+   "statement": "Daily downlink capacity shall be at least {100%} of daily compressed image data.",
+   "quantity": "dl_ratio",
+   "op": ">=",
+   "limit": 1,
+   "systems": [
+    "sband",
+    "camera"
+   ],
+   "kind": "numeric",
+   "source": "",
+   "stage": "Released"
+  },
+  {
+   "id": "REQ-11",
+   "name": "Battery energy ≥ 85 Wh",
+   "statement": "The battery shall store at least {85 Wh} at beginning of life.",
+   "quantity": "e_batt",
+   "op": ">=",
+   "limit": 85,
+   "systems": [
+    "battery"
+   ],
+   "kind": "numeric",
+   "source": "",
+   "stage": "Released"
+  },
+  {
+   "id": "REQ-12",
+   "name": "Battery protection circuits",
+   "statement": "The battery pack shall provide overcharge, overdischarge and short-circuit protection.",
+   "systems": [
+    "battery"
+   ],
+   "kind": "qualitative",
+   "stage": "Released"
+  },
+  {
+   "id": "REQ-13",
+   "name": "Cell vacuum screening",
+   "statement": "Battery cells shall pass vacuum leak screening before integration.",
+   "systems": [
+    "battery"
+   ],
+   "kind": "qualitative",
+   "stage": "Released"
+  },
+  {
+   "id": "REQ-14",
+   "name": "Keyed payload connector",
+   "statement": "The payload connector shall be keyed to prevent mis-mating.",
+   "systems": [
+    "camera"
+   ],
+   "kind": "qualitative",
+   "stage": "Released"
+  },
+  {
+   "id": "REQ-15",
+   "name": "Payload random vibration",
+   "statement": "The payload shall survive qualification-level random vibration without degradation.",
+   "systems": [
+    "camera"
+   ],
+   "kind": "qualitative",
+   "stage": "Released"
+  },
+  {
+   "id": "REQ-16",
+   "name": "Payload EMC with UHF",
+   "statement": "The payload shall not desensitise the UHF receiver by more than 3 dB.",
+   "systems": [
+    "camera",
+    "uhf"
+   ],
+   "kind": "qualitative",
+   "stage": "Released"
+  },
+  {
+   "id": "REQ-17",
+   "name": "Thermal strap workmanship",
+   "statement": "Thermal strap interfaces shall be bonded and inspected per the workmanship standard.",
+   "systems": [
+    "thermal"
+   ],
+   "kind": "qualitative",
+   "stage": "Released"
+  },
+  {
+   "id": "REQ-18",
+   "name": "Fits 6U dispenser envelope",
+   "statement": "The spacecraft shall fit within the 6U dispenser envelope.",
+   "systems": [
+    "structure"
+   ],
+   "kind": "qualitative",
+   "stage": "Released"
+  },
+  {
+   "id": "REQ-19",
+   "name": "Deployment inhibit timer",
+   "statement": "Deployables shall not deploy until at least 30 minutes after ejection.",
+   "systems": [
+    "structure"
+   ],
+   "kind": "qualitative",
+   "stage": "Released"
+  },
+  {
+   "id": "REQ-20",
+   "name": "UHF beacon",
+   "statement": "The UHF beacon shall transmit the callsign at least every 60 s.",
+   "systems": [
+    "uhf"
+   ],
+   "kind": "qualitative",
+   "stage": "Released"
+  },
+  {
+   "id": "REQ-21",
+   "name": "Telemetry storage",
+   "statement": "The on-board computer shall store at least 48 h of housekeeping telemetry.",
+   "systems": [
+    "cdh"
+   ],
+   "kind": "qualitative",
+   "stage": "Released"
+  },
+  {
+   "id": "REQ-22",
+   "name": "Pointing accuracy",
+   "statement": "The ADCS shall point the payload boresight within 0.1° (3σ) during imaging.",
+   "systems": [
+    "adcs"
+   ],
+   "kind": "qualitative",
+   "stage": "Released"
+  }
+ ],
+ "tests": [
+  {
+   "id": "TCS-1",
+   "name": "Mass properties measurement",
+   "hours": 6,
+   "verifies": [
+    "REQ-1",
+    "REQ-2"
+   ],
+   "plan": "Integration",
+   "lastRun": "Pass"
+  },
+  {
+   "id": "TCS-2",
+   "name": "Day-in-the-life power test",
+   "hours": 30,
+   "verifies": [
+    "REQ-4",
+    "REQ-5"
+   ],
+   "plan": "System",
+   "lastRun": "Pass"
+  },
+  {
+   "id": "TCS-3",
+   "name": "Solar array I-V flash test",
+   "hours": 8,
+   "verifies": [
+    "REQ-4"
+   ],
+   "plan": "Unit",
+   "lastRun": "Pass"
+  },
+  {
+   "id": "TCS-4",
+   "name": "Battery capacity and DoD cycling",
+   "hours": 40,
+   "verifies": [
+    "REQ-5",
+    "REQ-11"
+   ],
+   "plan": "Unit",
+   "lastRun": "Pass"
+  },
+  {
+   "id": "TCS-5",
+   "name": "Battery protection circuit test",
+   "hours": 6,
+   "verifies": [
+    "REQ-12"
+   ],
+   "plan": "Unit",
+   "lastRun": "Pass"
+  },
+  {
+   "id": "TCS-6",
+   "name": "Cell vacuum leak screening",
+   "hours": 16,
+   "verifies": [
+    "REQ-13"
+   ],
+   "plan": "Unit",
+   "lastRun": "Pass"
+  },
+  {
+   "id": "TCS-7",
+   "name": "Thermal vacuum cycling (system)",
+   "hours": 120,
+   "verifies": [
+    "REQ-6",
+    "REQ-7",
+    "REQ-8",
+    "REQ-4"
+   ],
+   "plan": "System",
+   "lastRun": "Pass"
+  },
+  {
+   "id": "TCS-8",
+   "name": "Payload thermal balance",
+   "hours": 24,
+   "verifies": [
+    "REQ-8"
+   ],
+   "plan": "Unit",
+   "lastRun": "Pass"
+  },
+  {
+   "id": "TCS-9",
+   "name": "Battery thermal chamber test",
+   "hours": 18,
+   "verifies": [
+    "REQ-6",
+    "REQ-7"
+   ],
+   "plan": "Unit",
+   "lastRun": "Pass"
+  },
+  {
+   "id": "TCS-10",
+   "name": "Sine and random vibration with modal survey",
+   "hours": 20,
+   "verifies": [
+    "REQ-3",
+    "REQ-15"
+   ],
+   "plan": "System",
+   "lastRun": "Pass"
+  },
+  {
+   "id": "TCS-11",
+   "name": "Payload unit random vibration",
+   "hours": 8,
+   "verifies": [
+    "REQ-15"
+   ],
+   "plan": "Unit",
+   "lastRun": "Pass"
+  },
+  {
+   "id": "TCS-12",
+   "name": "ADCS hardware-in-the-loop slew test",
+   "hours": 10,
+   "verifies": [
+    "REQ-9",
+    "REQ-22"
+   ],
+   "plan": "System",
+   "lastRun": "Pass"
+  },
+  {
+   "id": "TCS-13",
+   "name": "RF end-to-end downlink test",
+   "hours": 8,
+   "verifies": [
+    "REQ-10"
+   ],
+   "plan": "System",
+   "lastRun": "Pass"
+  },
+  {
+   "id": "TCS-14",
+   "name": "Payload connector inspection",
+   "hours": 2,
+   "verifies": [
+    "REQ-14"
+   ],
+   "plan": "Inspection",
+   "lastRun": "Pass"
+  },
+  {
+   "id": "TCS-15",
+   "name": "Thermal workmanship inspection",
+   "hours": 3,
+   "verifies": [
+    "REQ-17"
+   ],
+   "plan": "Inspection",
+   "lastRun": "Pass"
+  },
+  {
+   "id": "TCS-16",
+   "name": "EMC self-compatibility test",
+   "hours": 14,
+   "verifies": [
+    "REQ-16"
+   ],
+   "plan": "System",
+   "lastRun": "Pass"
+  },
+  {
+   "id": "TCS-17",
+   "name": "Dispenser fit check",
+   "hours": 3,
+   "verifies": [
+    "REQ-18"
+   ],
+   "plan": "Integration",
+   "lastRun": "Pass"
+  },
+  {
+   "id": "TCS-18",
+   "name": "Deployment inhibit functional test",
+   "hours": 4,
+   "verifies": [
+    "REQ-19"
+   ],
+   "plan": "System",
+   "lastRun": "Pass"
+  },
+  {
+   "id": "TCS-19",
+   "name": "UHF beacon functional test",
+   "hours": 2,
+   "verifies": [
+    "REQ-20"
+   ],
+   "plan": "System",
+   "lastRun": "Pass"
+  },
+  {
+   "id": "TCS-20",
+   "name": "OBC storage soak test",
+   "hours": 48,
+   "verifies": [
+    "REQ-21"
+   ],
+   "plan": "Unit",
+   "lastRun": "Pass"
+  }
+ ],
+ "systems": [
+  {
+   "id": "kestrel",
+   "name": "Kestrel-6U",
+   "parent": null,
+   "color": "#64748b"
+  },
+  {
+   "id": "structure",
+   "name": "Structure",
+   "parent": "kestrel",
+   "color": "#6366f1"
+  },
+  {
+   "id": "eps",
+   "name": "Electrical Power",
+   "parent": "kestrel",
+   "color": "#f59e0b"
+  },
+  {
+   "id": "solar",
+   "name": "Solar Arrays",
+   "parent": "eps",
+   "color": "#f59e0b"
+  },
+  {
+   "id": "battery",
+   "name": "Battery Pack",
+   "parent": "eps",
+   "color": "#ef4444"
+  },
+  {
+   "id": "cdh",
+   "name": "Command & Data Handling",
+   "parent": "kestrel",
+   "color": "#10b981"
+  },
+  {
+   "id": "adcs",
+   "name": "ADCS",
+   "parent": "kestrel",
+   "color": "#06b6d4"
+  },
+  {
+   "id": "comms",
+   "name": "Communications",
+   "parent": "kestrel",
+   "color": "#8b5cf6"
+  },
+  {
+   "id": "uhf",
+   "name": "UHF Radio",
+   "parent": "comms",
+   "color": "#8b5cf6"
+  },
+  {
+   "id": "sband",
+   "name": "S-band Downlink",
+   "parent": "comms",
+   "color": "#8b5cf6"
+  },
+  {
+   "id": "camera",
+   "name": "Payload Camera",
+   "parent": "kestrel",
+   "color": "#ec4899"
+  },
+  {
+   "id": "thermal",
+   "name": "Thermal Control",
+   "parent": "kestrel",
+   "color": "#f97316"
+  },
+  {
+   "id": "mission",
+   "name": "Mission & Environment",
+   "parent": "kestrel",
+   "color": "#94a3b8"
+  }
+ ],
+ "branches": [
+  {
+   "id": "payload-camera-v2",
+   "name": "payload-camera-v2",
+   "author": "Priya Raman",
+   "title": "Upgrade to camera v2 (higher-res sensor)",
+   "change": {
+    "m_cam": {
+     "nominal": 1.63
+    },
+    "p_cam": {
+     "nominal": 9.9
+    },
+    "mb_img": {
+     "nominal": 15.5
+    }
+   }
+  },
+  {
+   "id": "battery-cell-swap",
+   "name": "battery-cell-swap",
+   "author": "Marcus Webb",
+   "title": "Swap to 3.5 Ah cells (supply change)",
+   "change": {
+    "cap_ah": {
+     "nominal": 3.5
+    },
+    "m_cell": {
+     "nominal": 0.0485
+    },
+    "r_int": {
+     "nominal": 0.038
+    }
+   }
+  },
+  {
+   "id": "thermal-strap-redesign",
+   "name": "thermal-strap-redesign",
+   "author": "Ana Ortiz",
+   "title": "Copper strap to graphite, camera to radiator",
+   "change": {
+    "r_cam": {
+     "nominal": 1.12
+    },
+    "m_therm": {
+     "nominal": 0.21
+    }
+   }
+  }
+ ],
+ "notes": "Synthetic program. Limits marked CDS from CubeSat Design Specification Rev 14.1; other values typical datasheet figures; tolerances and allocations are assumptions."
+}
